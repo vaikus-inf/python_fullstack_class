@@ -1,0 +1,5 @@
+books = int(input('Введите количество коробок с книгами: '))
+stationery = int(input('Введите количество коробок с канцтоварами: '))
+toys = int(input('Введите количество коробок с игрушками: '))
+volume: int = (books * 2) + (stationery * 1.5) + (toys * 3)
+print(volume)
