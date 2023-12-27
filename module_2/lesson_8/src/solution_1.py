@@ -6,4 +6,5 @@ def price_dictionary(key: str) -> None:
     else:
         print('Введенный товар отсутствует в словаре!')
 
-price_dictionary(input('Введите товар: '))
+price_dictionary('Яблоко')
+price_dictionary('Кофе')
