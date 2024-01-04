@@ -1,5 +1,5 @@
-def convert_to_hex(r: int = 0, g: int = 0, b: int = 0) -> str: 
-    return(f'#{hex(r)[-2:]}{hex(g)[-2:]}{hex(b)[-2:]}'.replace('x', '0').upper())
+def convert_to_hex(r: int = 0, g: int = 0, b: int = 0) -> str:
+    return(f'#{r:02X}{g:02X}{b:02X}')
     
 print(f'HEX: {convert_to_hex(255, 0, 0)}')
 print(f'HEX: {convert_to_hex(0, 255, 0)}')
