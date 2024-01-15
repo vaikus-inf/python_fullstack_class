@@ -1,7 +1,10 @@
 def collect_data(data: list[int]) -> None:
     def process_data(data: list[int]) -> None:
         def summarize_data(average_value: float) -> None:
-            print(f'Итог: Среднее значение: {average_value}')
+            if average_value > int(average_value):
+                print(f'Итог: Среднее значение: {average_value}')
+            else:
+                print(f'Итог: Среднее значение: {int(average_value)}')
         summarize_data(sum(data) / len(data))
     process_data(data)
 
