@@ -1,11 +1,10 @@
-'''  Система учёта остатков '''
+"""Система учёта остатков"""
 
 
 def update_stock(item: str, quantity: int, stock: dict) -> None:
-    '''
-    Изменение количества имеющегося на складе товара
+    """Изменение количества имеющегося на складе товара
     или добавление нового товара
-    '''
+    """
     if item in stock:
         stock[item]["quantity"] += quantity
     else:
@@ -13,12 +12,12 @@ def update_stock(item: str, quantity: int, stock: dict) -> None:
 
 
 def get_item_quantity(item_name: str, stock: dict) -> int:
-    ''' Получение остатков заданного товара '''
+    """Получение остатков заданного товара"""
     return stock[item_name]["quantity"]
 
 
 def remove_item(item: str, stock: dict) -> None:
-    ''' Удаление заданного товара со склада '''
+    """Удаление заданного товара со склада"""
     if item in stock:
         del stock[item]
 

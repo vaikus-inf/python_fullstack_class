@@ -1,19 +1,19 @@
-'''CRM-система для магазина'''
+"""CRM-система для магазина"""
 
 
 def add_client(name: str, history: dict) -> None:
-    '''Добавление клиента'''
+    """Добавление клиента"""
     client_id: int = len(history) + 1
     history[client_id] = {'name': name, 'orders': []}
 
 
 def make_order(client_id: int, history: dict, order_details: dict) -> None:
-    '''Создание заказа'''
+    """Создание заказа"""
     history[client_id]['orders'].append(order_details)
 
 
 def get_history(client_id: int, history: dict) -> list[dict]:
-    '''Получение истории заказов клиента'''
+    """Получение истории заказов клиента"""
     return history[client_id]['orders']
 
 
