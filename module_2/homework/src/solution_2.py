@@ -1,17 +1,14 @@
-import math
-
-
 def binary_find_element(list_elements: list[int], element: int = 0) -> bool:
     
     while len(list_elements) != 0:
         index_last_element: int = len(list_elements) - 1
 
-        if list_elements[math.ceil(index_last_element / 2)] == element:
+        if list_elements[index_last_element // 2] == element:
             return True
-        if list_elements[math.ceil(index_last_element / 2)] > element:
-            list_elements = list_elements[:math.ceil(index_last_element / 2)]
+        if list_elements[index_last_element // 2] > element:
+            list_elements = list_elements[:index_last_element // 2]
         else:
-            list_elements = list_elements[math.ceil(index_last_element / 2) + 1:]
+            list_elements = list_elements[index_last_element // 2 + 1:]
 
     return False
 
