@@ -1,0 +1,34 @@
+{
+    "sales": [
+      {
+        "product": "Футболка",
+        "category": "Одежда",
+        "quantity": 3,
+        "total_price": 1500
+      },
+      {
+        "product": "Чашка",
+        "category": "Посуда",
+        "quantity": 2,
+        "total_price": 700
+      },
+      {
+        "product": "Шпаклевка",
+        "category": "Стройматериалы",
+        "quantity": 1,
+        "total_price": 1800
+      },
+      {
+        "product": "Джинсы",
+        "category": "Одежда",
+        "quantity": 2,
+        "total_price": 10000
+      },
+      {
+        "product": "Тарелка",
+        "category": "Посуда",
+        "quantity": 5,
+        "total_price": 2500
+      }
+    ]
+}
