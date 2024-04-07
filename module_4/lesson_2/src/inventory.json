@@ -11,6 +11,12 @@
         "category": "Материалы",
         "quantity": 20,
         "minimum_required": 15
+      },
+      {
+        "item": "Герметик",
+        "category": "Материалы",
+        "quantity": 8,
+        "minimum_required": 20
       }
     ]
 }

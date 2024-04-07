@@ -20,10 +20,10 @@ name_last_file = int(last_file[:last_file.find('.')])
 
 #Создание файлов, для проверки работы программы
 for i in range(name_first_file, name_last_file + 1):
-    with open(str(i)+'.txt', 'w', encoding='utf8') as file:
+    with open(str(i)+'.txt', 'w', encoding='utf-8') as file:
         file.write(f'Тестовый текст для файла {str(i)}.txt')
 
-with open('for_buh.txt', 'w', encoding='utf8') as file_for_buh:
+with open('for_buh.txt', 'w', encoding='utf-8') as file_for_buh:
     for i in range(name_first_file, name_last_file + 1):
         with open(str(i)+'.txt', 'r') as payment_information:
             file_content = payment_information.read()
