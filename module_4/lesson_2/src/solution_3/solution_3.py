@@ -32,9 +32,9 @@ class Client:
 
 processed_clients: int = 0
 missed_clients: int = 0
-clients_dict: dict[str, list[str]] = {'clients': []}
+clients_dict: dict[str, list[dict]] = {'clients': []}
 
-with open('module_4/lesson_2/src/solution_3/clients.csv', 'r', encoding='utf-8') as csv_file:
+with open('clients.csv', 'r', encoding='utf-8') as csv_file:
     reader = csv.reader(csv_file)
     for i, row in enumerate(reader):
         if i > 0:
@@ -49,7 +49,7 @@ with open('module_4/lesson_2/src/solution_3/clients.csv', 'r', encoding='utf-8')
             else:
                 missed_clients += 1
 
-with open('module_4/lesson_2/src/solution_3/clients.json', 'w', encoding='utf-8') as json_file:
+with open('clients.json', 'w', encoding='utf-8') as json_file:
     json.dump(clients_dict, json_file, ensure_ascii=False, indent=2)
 
 print(f'Было обработано(клиентов): {processed_clients}')
