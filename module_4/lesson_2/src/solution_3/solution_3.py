@@ -54,3 +54,4 @@ with open('clients.json', 'w', encoding='utf-8') as json_file:
 
 print(f'Было обработано(клиентов): {processed_clients}')
 print(f'Было пропущено(клиентов): {missed_clients}')
+
