@@ -13,4 +13,3 @@ for item in data['sales']:
 
 for key, value in revenue_by_category.items():
     print(f'Выручка по категории {key}: {value}')
-

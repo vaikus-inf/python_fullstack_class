@@ -8,4 +8,3 @@ list_materials: list = [dict_item['item'] + ' ' + str(dict_item['minimum_require
 
 print('Необходимо закупить: ', end='')
 print(*list_materials, sep=', ')
-
