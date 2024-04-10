@@ -1,6 +1,6 @@
 import json
 
-with open('module_4/lesson_2/src/solution_2/inventory.json', encoding='utf-8') as file:
+with open('inventory.json', encoding='utf-8') as file:
     data: dict = json.load(file)
 
 list_materials: list = [dict_item['item'] + ' ' + str(dict_item['minimum_required'] - dict_item['quantity']) + ' шт.'

@@ -1,6 +1,6 @@
 import json
 
-with open('module_4/lesson_2/src/solution_1/sales.json', encoding='utf-8') as file:
+with open('sales.json', encoding='utf-8') as file:
     data: dict = json.load(file)
 
 revenue_by_category: dict[str, int] = {}
