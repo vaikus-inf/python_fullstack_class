@@ -3,82 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png">
     <title>Lesson 1</title>
 </head>
 <body>
     <header class="header-section">
-        <a class="logo" href="#">
-            logo
-        </a>
-        <nav class="menu-nav">
-            <ul class="menu-list">
-                <li class="menu-item"><a href="#">Главная</a></li>
-                <li class="menu-item"><a href="#">Текст</a></li>
-                <li class="menu-item"><a href="#">Списки</a></li>
-                <li class="menu-item"><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
-        <a href="tel: +71234567890" class="phone">+7 (123) 456-78-90</a>
+        <div class="container">
+            <div class="menu-wrapper">
+                <a class="logo" href="#">
+                    logo
+                </a>
+                <nav class="menu-nav">
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="#">Главная</a></li>
+                        <li class="menu-item"><a href="#">Текст</a></li>
+                        <li class="menu-item"><a href="#">Списки</a></li>
+                        <li class="menu-item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a href="tel: +71234567890" class="phone">+7 (123) 456-78-90</a>
+            </div>
+        </div>
     </header>
 
     <section class="offer-section">
-        <div class="offer">
-            <h1 class="offer-title">Мой первый сайт</h1>
-            <p class="offer-text">На этом курсе я научусь создавать свои сайты с помощью HTML, CSS и JS без хлопот и проблем</p>
-            <button class="offer-btn">Лучшая кнопка</button>
+        <div class="container">
+            <div class="offer-wrapper">
+                <div class="offer">
+                    <h1 class="offer-title">Мой первый сайт</h1>
+                    <p class="offer-text">На этом курсе я научусь создавать свои сайты с помощью HTML, CSS и JS без хлопот и проблем</p>
+                    <button class="offer-btn">Лучшая кнопка</button>
+                </div>
+                <img src="img/offer-img.png" class="offer-img" alt="girl">
+            </div>
         </div>
-        <img src="https://avatars.mds.yandex.net/i?id=26adb3f611668c07b7a16514d5fce3b77ff7938b-9231626-images-thumbs&n=13&roistat_visit=1754663" class="offer-img" alt="girafe">
     </section>
 
     <section class="text-section">
-        <h2 class="section-title">Блокнот знаний</h2>
-        <div class="left-block">
-            <h3 class="block-title">HTML</h3>
-            <p class="block-text">HTML (HyperText Markup Language) - это стандартный язык разметки для создания веб-страниц. Он используется для описания структуры и содержимого документа, определяя, как эти элементы должны быть представлены в браузере. HTML состоит из различных элементов, таких как заголовки, параграфы, списки, ссылки, изображения и многое другое. Каждый элемент определяется с помощью тегов, которые заключают содержимое элемента и указывают браузеру, как его отобразить.</p>
-        </div>
-        <div class="right-block">
-            <h3 class="block-title">CSS</h3>
-            <p class="block-text">CSS (Cascading Style Sheets) - это язык стилей, используемый для определения внешнего вида и форматирования веб-страниц. Он позволяет разработчикам управлять представлением элементов HTML, изменяя их цвета, шрифты, размеры, расположение и другие аспекты. CSS работает в паре с HTML, где HTML определяет структуру содержимого страницы, а CSS добавляет стиль и визуальное оформление. В CSS используется селекторы, которые выбирают определенные элементы на веб-странице, и правила, которые определяют, как эти элементы должны быть стилизованы.</p>
+        <div class="container">
+            <div class="title-wrapper">
+                <h2 class="section-title">Блокнот знаний</h2>
+                <img src="img/line.png" alt="line">
+            </div>
+            <div class="block-wrapper">
+                <div class="left-block">
+                    <h3 class="block-title">HTML</h3>
+                    <p class="block-text">HTML (HyperText Markup Language) - это стандартный язык разметки для создания веб-страниц. Он используется для описания структуры и содержимого документа, определяя, как эти элементы должны быть представлены в браузере. HTML состоит из различных элементов, таких как заголовки, параграфы, списки, ссылки, изображения и многое другое. Каждый элемент определяется с помощью тегов, которые заключают содержимое элемента и указывают браузеру, как его отобразить.</p>
+                </div>
+                <div class="right-block">
+                    <h3 class="block-title">CSS</h3>
+                    <p class="block-text">CSS (Cascading Style Sheets) - это язык стилей, используемый для определения внешнего вида и форматирования веб-страниц. Он позволяет разработчикам управлять представлением элементов HTML, изменяя их цвета, шрифты, размеры, расположение и другие аспекты. CSS работает в паре с HTML, где HTML определяет структуру содержимого страницы, а CSS добавляет стиль и визуальное оформление. В CSS используется селекторы, которые выбирают определенные элементы на веб-странице, и правила, которые определяют, как эти элементы должны быть стилизованы.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="list-section">
-        <h2 class="section-title">Мастер списков</h2>
-        <ul class="list">
-            <li class="list-item"><span>1</span>
-                <h3 class="list-title">Список</h3>
-                <p class="list-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </li>
-            <li class="list-item"><span>2</span>
-                <h3 class="list-title">Не так прост</h3>
-                <p class="list-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </li>
-            <li class="list-item"><span>3</span>
-                <h3 class="list-title">Как может показаться</h3>
-                <p class="list-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </li>
-        </ul>
-        <div class="image-block">
-            <img class="image" src="https://img.freepik.com/free-vector/cute-dog-sitting-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-flat_138676-4474.jpg?t=st=1685281565~exp=1685282165~hmac=597786083f3b7c3beb692964f75139427e56239c00e23d161a2d4a3a504e05ff&roistat_visit=1754663" alt="dog">
-            <img class="image" src="https://img.freepik.com/free-vector/cute-doctor-rabbit-holding-injection-cartoon-vector-icon-illustration-animal-healthcare-isolated_138676-5124.jpg?t=st=1685873719~exp=1685874319~hmac=1f43a455649c6527a9732dcc4edc8d6166a37fff8a50507dd5eb26fa31f5fa4c&roistat_visit=1754663" alt="fish">
-            <img class="image" src="https://img.freepik.com/free-vector/cute-koi-fish-swimming-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-flat_138676-4488.jpg?t=st=1684941001~exp=1684941601~hmac=6818054d0517420362833b0e98c5d63d76d1c025c390bc40fd6f0f1d5929c432&roistat_visit=1754663" alt="rabbit">
+        <div class="container">
+            <div class="title-wrapper">
+                <h2 class="section-title">Мастер списков</h2>
+                <img src="img/line.png" alt="line">
+            </div>
+            <div class="list-wrapper">
+                <ul class="list">
+                    <li class="list-item"><span>1</span>
+                        <h3 class="list-title">Список</h3>
+                        <p class="list-text">Казалось бы, всего лишь перечень...</p>
+                    </li>
+                    <li class="list-item"><span>2</span>
+                        <h3 class="list-title">Не так прост</h3>
+                        <p class="list-text">...но все гораздо сложнее.</p>
+                    </li>
+                    <li class="list-item"><span>3</span>
+                        <h3 class="list-title">Как может показаться</h3>
+                        <p class="list-text">Стоить изучить подробнее...</p>
+                    </li>
+                </ul>
+                <div class="image-block">
+                    <img class="image" src="img/img1.png" alt="brackets">
+                    <img class="image" src="img/img2.png" alt="sign">
+                    <img class="image" src="img/img3.png" alt="one">
+                    <img class="image" src="img/img4.png" alt="endBrackets">
+                </div>
+            </div>
         </div>
     </section>
 
     <footer class="footer-section">
-        <a class="logo" href="#">
-            logo
-        </a>
-        <nav class="menu-nav">
-            <ul class="menu-list">
-                <li class="menu-item"><a href="#">Главная</a></li>
-                <li class="menu-item"><a href="#">Текст</a></li>
-                <li class="menu-item"><a href="#">Списки</a></li>
-                <li class="menu-item"><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
-        <a href="tel: +71234567890" class="phone">+7 (123) 456-78-90</a>
-        <a href="mailto: mailme@mail.com" target="_blank" class="mail">mailme@mail.com</a>
+        <div class="container">
+            <div class="menu-wrapper">
+                <a class="logo" href="#">
+                    logo
+                </a>
+                <nav class="menu-nav">
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="#">Главная</a></li>
+                        <li class="menu-item"><a href="#">Текст</a></li>
+                        <li class="menu-item"><a href="#">Списки</a></li>
+                        <li class="menu-item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a href="tel: +71234567890" class="phone">+7 (123) 456-78-90</a>
+                <a href="mailto: mailme@mail.com" target="_blank" class="mail">mailme@mail.com</a>
+            </div>
+        </div>
     </footer>
 
 </body>
