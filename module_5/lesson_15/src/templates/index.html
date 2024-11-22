@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Главная страница{% endblock %}</title>
+</head>
+<body>
+    {% block content %}    
+    {{ hello }}<br />
+    <a href="/logo/Иван/Петров/23">Ссылка на другую страницу</a>
+    {% endblock %}
+    <h4>Test</h4>
+</body>
+</html>
